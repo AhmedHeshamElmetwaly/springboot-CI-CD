@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'gradle assemble --stacktrace --refresh-dependencies'
+                sh 'gradle assemble --stacktrace --refresh-dependencies --scan'
             }
         }
          stage('Test') {
